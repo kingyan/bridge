@@ -21,7 +21,7 @@ o.rmempty=false
 
 o=s:option(Value,"network", translate("Number of network ports"), translate("The number of physical network ports on the soft route is automatically detected when left blank."))
 
-o = m:section(TypedSection, "bridge", translate("Setting instructions:"), translate("<li>Applicable to network environments that have superior routing and require some functions of soft routing but do not want multi-level NAT.</li>The switch or client needs to be connected to the network port of the soft route.<li>The WEB console of the soft route after the transparent bridge is enabled is the bridge IP.</li>Some features on the soft route will be invalid after enabling the transparent bridge, such as Full Cone, multi-dial, etc.<li>After closing, restore the network settings when the plugin is installed, and the WEB console reverts to the original set IP.</li>"))
+o = m:section(TypedSection, "bridge", translate("Setting instructions:"), translate("<li>Applicable to network environments that have superior routing and require some functions of soft routing but do not want multi-level NAT.</li><li>The switch or client needs to be connected to the network port of the soft route.</li><li>The WEB console of the soft route after the transparent bridge is enabled is the bridge IP.</li><li>Some features on the soft route will be invalid after enabling the transparent bridge, such as Full Cone, multi-dial, etc.</li><li>After closing, restore the network settings when the plugin is installed, and the WEB console reverts to the original set IP.</li>"))
 o.anonymous = true
 
 return m
